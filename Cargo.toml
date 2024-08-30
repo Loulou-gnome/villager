@@ -5,7 +5,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-bevy = { version = "0.14", features = ["wayland"] }
+bevy = { version = "0.14", features = ["x11"] }
 rand = "0.8"
 # Compile low-severity logs out of native builds for performance.
 log = { version = "0.4", features = [
@@ -17,6 +17,15 @@ tracing = { version = "0.1", features = [
     "max_level_debug",
     "release_max_level_warn",
 ] }
+bevy-inspector-egui = "0.25.2"
+bevy_asset = "0.14.1"
+bevy_egui = "0.29.0"
+egui_dock = "0.13.0"
+bevy_reflect = "0.14.1"
+bevy_render = "0.14.1"
+bevy_window = "0.14.1"
+transform-gizmo-egui = "0.3.0"
+egui = "0.28.1"
 
 [features]
 default = [
